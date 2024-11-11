@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Outfit", serif;
+}
+body{
+    background-color: hsl(210, 22%, 93%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(212, 45%, 89%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px);
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 23%;
+}
+.main-icon > img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+.main-container-content > span {
+    font-weight: 700;
+}
+.main-container-content > p {
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    font-size: 15px;
+}
+
+/*RESPONSIVENES FOR MOBILE DEVICES*/
+@media screen and (min-width: 319px) and (max-width: 480px){
+    
+    .container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .main-container{
+        width: 85%;
+    }
+}
